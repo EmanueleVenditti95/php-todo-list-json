@@ -1,4 +1,6 @@
 <?php 
-    $new_toDO = $_POST['new_toDo'];
-    var_dump($new_toDO);
+    $new_toDo = $_POST['new_toDo'];
+
+    header('Content-Type: application/json');
+    echo json_encode($new_toDo);
 ?>

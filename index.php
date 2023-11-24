@@ -11,15 +11,17 @@
    <div id="app">
     <h1>To Do List :</h1>
 
-    <form method="POST" action="store.php">
-        <input type="text" placeholder="new task..." name="new_toDo">
-        <input type="submit">
-    </form>
+    <input type="text" 
+            placeholder="new task..." 
+            name="new_toDo"
+            v-model="newToDo"
+            @keyup.enter="sendToDo">
 
     <ul>
         <li v-for="toDo,i in toDos" :key="i" >
             {{ toDo }}
         </li>
+        <li>{{ newToDo }}</li>
     </ul>
 
    </div>
