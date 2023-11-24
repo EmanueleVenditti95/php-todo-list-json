@@ -12,8 +12,7 @@
     <h1>To Do List :</h1>
 
     <input type="text" 
-            placeholder="new task..." 
-            name="new_toDo"
+            placeholder="new task..."
             v-model="newToDo"
             @keyup.enter="sendToDo">
 
@@ -21,7 +20,6 @@
         <li v-for="toDo,i in toDos" :key="i" >
             {{ toDo }}
         </li>
-        <li>{{ newToDo }}</li>
     </ul>
 
    </div>
