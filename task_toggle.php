@@ -11,7 +11,7 @@
     $toDos_php = json_decode($db_json,true);
 
     #riassegno il valore della task
-    $toDos_php[$index]["done"] = $value;
+    $toDos_php[$index]["done"] = !$toDos_php[$index]["done"];
     
 
     #codifico l'array e lo mando al file json

@@ -7,7 +7,7 @@ $new_toDo = [
 
 $response = [
     'success' => true,
-  ];
+];
 
 if (trim($new_toDo["text"]) != '') {
     #prendo i dati dal file json

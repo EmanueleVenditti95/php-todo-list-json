@@ -25,22 +25,24 @@ createApp({
                 headers : {'Content-Type': 'multipart/form-data'},
             }).then((res) => {
                 console.log(res.data);
-                this.toDos.push(res.data);
+                // this.toDos.push(res.data);
                 this.fetchData();
                 this.newToDo = '';
             })
         },
         taskToggle(index) {
             this.currentIndex = index;
-            this.toDos[index].done = !this.toDos[index].done;
+            // this.toDos[index].done = !this.toDos[index].done;
 
             const data = { 
-                taskDone : this.toDos[index].done,
+               // taskDone : this.toDos[index].done,
                 index
             };
 
             axios.post('task_toggle.php', data , {
                 headers : {'Content-Type': 'multipart/form-data'},
+            }).then(res => {
+                this.fetchData();
             })
         }
     },

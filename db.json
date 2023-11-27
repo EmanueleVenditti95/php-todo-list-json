@@ -1,1 +1,22 @@
-[{"text":"HTML","done":"false"},{"text":"CSS","done":"false"},{"text":"JavaScript","done":"false"},{"text":"PHP","done":"true"},{"text":"Vue","done":"true"}]
+[
+    {
+        "text": "HTML",
+        "done": true
+    },
+    {
+        "text": "CSS",
+        "done": false
+    },
+    {
+        "text": "JavaScript",
+        "done": false
+    },
+    {
+        "text": "PHP",
+        "done": false
+    },
+    {
+        "text": "Vue",
+        "done": true
+    }
+]
