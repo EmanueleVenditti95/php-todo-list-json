@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP ToDo List JSON</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
-   <div id="app">
+   <div id="app" class="container">
     <h1>To Do List :</h1>
 
     <input type="text" 
@@ -18,7 +19,8 @@
 
     <ul>
         <li v-for="toDo,i in toDos" :key="i" >
-            {{ toDo.text }}
+            <div>{{ toDo.text }}</div>
+            <div>{{ toDo.done }}</div>
         </li>
     </ul>
 
