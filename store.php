@@ -6,12 +6,12 @@
     ];
 
     #prendo i dati dal file json
-    $db_json = file_get_contents("/db.json");
+    $db_json = file_get_contents("./db.json");
     #li decodifico per php
     $toDos_php = json_decode($db_json,true);
 
     #pusho la nuova task nell'array php    
-    $toDos_php[] = $new_toDo;
+    array_push($toDos_php,$new_toDo);
 
     #codifico l'array e lo mando al file json
     $toDos_json = json_encode($toDos_php);

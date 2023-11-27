@@ -25,6 +25,8 @@ createApp({
             }).then((res) => {
                 console.log(res.data);
                 this.toDos.push(res.data);
+                this.fetchData();
+                this.newToDo = '';
             })
         }
     },
