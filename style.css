@@ -15,3 +15,7 @@ li {
     justify-content: space-between;
     padding: 10px;
 }
+
+.task-done {
+    text-decoration: line-through;
+}

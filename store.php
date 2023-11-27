@@ -2,7 +2,7 @@
     #salvo la variabile con la nuova task
     $new_toDo = [
        "text" => $_POST['toDo'],
-       "done" => "false"
+       "done" => false
     ];
 
     #prendo i dati dal file json

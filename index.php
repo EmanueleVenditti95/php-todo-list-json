@@ -19,7 +19,7 @@
 
     <ul>
         <li v-for="toDo,i in toDos" :key="i" >
-            <div>{{ toDo.text }}</div>
+            <div :class=" toDo.done ? 'task-done' : '' ">{{ toDo.text }}</div>
             <div>{{ toDo.done }}</div>
         </li>
     </ul>
