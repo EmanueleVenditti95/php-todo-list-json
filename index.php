@@ -18,7 +18,7 @@
 
     <ul>
         <li v-for="toDo,i in toDos" :key="i" >
-            {{ toDo }}
+            {{ toDo.text }}
         </li>
     </ul>
 
