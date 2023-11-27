@@ -17,12 +17,13 @@ createApp({
             const data = {
                 toDo: this.newToDo
             }
-            console.log(data)
+            console.log(data);
 
             axios.post('store.php', data, {
                 headers : {'Content-Type': 'multipart/form-data'},
             }).then((res) => {
-                console.log(res)
+                console.log(res.data);
+                this.toDos.push(res.data);
             })
         }
     },
